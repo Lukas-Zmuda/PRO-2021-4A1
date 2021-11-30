@@ -9,6 +9,7 @@ public class Metody {
 		ciara('*');
 		ciara('#', 15);
 		System.out.println("2 * 3 = " + vynasob(2, 3));
+		System.out.println("1.2 * 3 = " + vynasob(1.2, 3));
 
 	}
 	
@@ -37,5 +38,12 @@ public class Metody {
 		int c = a * b;
 		return c;
 	}
+	
+	static double vynasob(double a, double b) {
+		return a * b;
+	}
 
+	static double vynasob(double a, double b, double c, double d) {
+		return vynasob(a, b) * vynasob(c, d);
+	}
 }

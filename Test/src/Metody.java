@@ -46,4 +46,16 @@ public class Metody {
 	static double vynasob(double a, double b, double c, double d) {
 		return vynasob(a, b) * vynasob(c, d);
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

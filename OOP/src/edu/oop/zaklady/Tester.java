@@ -13,6 +13,9 @@ public class Tester {
 		Osoba ziak2 = new Osoba();
 		
 		ziak.meno = "Jan";
+		ziak.priezvisko = "Hrasko";
+		ziak.vek = 24;
+		ziak.pohlavie = 'm';
 		
 		System.out.println("Ziak ma meno: " + ziak.meno);
 

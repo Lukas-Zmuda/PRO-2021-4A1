@@ -17,7 +17,15 @@ public class Tester {
 		ziak.vek = 24;
 		ziak.pohlavie = 'm';
 		
-		System.out.println("Ziak ma meno: " + ziak.meno);
+		ziak2.meno = "Frantisek";
+		ziak2.priezvisko = "Mravec";
+		ziak2.vek = 35;
+		ziak2.pohlavie = 'n';
+		
+		//System.out.println("Ziak ma meno: " + ziak.meno);
+		ziak.vypisInfo();
+		System.out.println("-----------------");
+		ziak2.vypisInfo();
 
 	}
 

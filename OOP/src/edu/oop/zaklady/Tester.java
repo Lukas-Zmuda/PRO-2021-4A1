@@ -26,6 +26,14 @@ public class Tester {
 		ziak.vypisInfo();
 		System.out.println("-----------------");
 		ziak2.vypisInfo();
+		
+		System.out.println(ziak.infoPlnoleta());
+		
+		MyTime aktualny = new MyTime();
+		aktualny.hour = 9;
+		aktualny.minute = 1;
+		aktualny.second = 5;
+		System.out.println(aktualny.toString());
 
 	}
 

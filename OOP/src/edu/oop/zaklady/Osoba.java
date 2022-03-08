@@ -52,15 +52,32 @@ public class Osoba {
 	
 	/**
 	 * Metoda vrati retazec v tvare: 
-	 * meno priezvisko: plnolety(ak je muz)
-	 * meno priezvisko: plnoleta(ak je zena, neuvadza, ine)
-	 * @return
+	 * meno priezvisko: plnolety/neplnolety(ak je muz)
+	 * meno priezvisko: plnoleta/neplnoleta(ak je zena, neuvadza, ine)
+	 * @return retazec
 	 */
 	
 	String infoPlnoleta() {
-		//TODO
-		return "";
+		String retazec = meno + " " + priezvisko + ": ";
+		if(pohlavie == 'm') {
+			if(plnoleta()) {
+				retazec += "plnolety";
+			}else {
+				retazec += "neplnolety";
+			}
+		}else {
+			if(plnoleta()) {
+				retazec += "plnoleta";
+			}else {
+				retazec += "neplnoleta";
+			}
+		}
+		return retazec;
 	}
+	
+	
+	
+	
 	
 	
 	

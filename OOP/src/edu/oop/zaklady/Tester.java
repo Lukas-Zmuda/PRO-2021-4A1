@@ -10,6 +10,8 @@ public class Tester {
 		//inicializacia objektu
 		ziak = new Osoba();
 		
+		System.out.println(ziak.meno);
+		
 		Osoba ziak2 = new Osoba();
 		
 		ziak.meno = "Jan";
@@ -34,6 +36,14 @@ public class Tester {
 		aktualny.minute = 1;
 		aktualny.second = 5;
 		System.out.println(aktualny.toString());
+		
+		Osoba ziak3 = new Osoba("Vcielka", "Maja", 45, 'f');
+		ziak3.vypisInfo();
+		
+		Osoba ziak4 = new Osoba("Robert", "Kalinak", 75);
+		ziak4.vypisInfo();
+		
+		
 
 	}
 

@@ -9,6 +9,39 @@ public class Osoba {
 	int vek;
 	char pohlavie; //'m'(muz), 'f'(zena), 'd'(ine), 'n'(neuvadzam)
 
+	//konstruktor
+	Osoba(){
+//		meno = "nezname";
+//		priezvisko = "nezname";
+//		vek = 10;
+//		pohlavie = 'n';
+		
+		this("nezname", "nezname", 10, 'n');
+		System.out.println("Volany prazdny konstruktor");
+	}
+	
+	
+	
+
+
+	Osoba(String meno, String priezvisko, int vek, char pohlavie) {
+		this.meno = meno;
+		this.priezvisko = priezvisko;
+		this.vek = vek;
+		this.pohlavie = pohlavie;
+		System.out.println("Konstruktor so vsetkymi parametrami");
+	}
+
+
+
+	Osoba(String m, String p, int v){
+		meno = m;
+		priezvisko = p;
+		vek = v;
+		pohlavie = 'n';
+		System.out.println("Volany konstruktor bez pohlavia");
+	}
+	
 	//schopnosti
 	//metody
 	/**

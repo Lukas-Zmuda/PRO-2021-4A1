@@ -5,12 +5,12 @@ public class Osoba {
 	//vlastnosti
 	//instancne premenne (angl. fields)
 	String meno;
-	String priezvisko;
+	private String priezvisko;
 	int vek;
 	char pohlavie; //'m'(muz), 'f'(zena), 'd'(ine), 'n'(neuvadzam)
 
 	//konstruktor
-	Osoba(){
+	public Osoba(){
 //		meno = "nezname";
 //		priezvisko = "nezname";
 //		vek = 10;
@@ -20,10 +20,6 @@ public class Osoba {
 		System.out.println("Volany prazdny konstruktor");
 	}
 	
-	
-	
-
-
 	Osoba(String meno, String priezvisko, int vek, char pohlavie) {
 		this.meno = meno;
 		this.priezvisko = priezvisko;
@@ -31,8 +27,6 @@ public class Osoba {
 		this.pohlavie = pohlavie;
 		System.out.println("Konstruktor so vsetkymi parametrami");
 	}
-
-
 
 	Osoba(String m, String p, int v){
 		meno = m;
@@ -44,10 +38,24 @@ public class Osoba {
 	
 	//schopnosti
 	//metody
+	
+	//getter
+	public String getPriezvisko() {
+		return this.priezvisko;
+	}
+	//setter
+	public void setPriezvisko(String priezvisko) {
+		if(priezvisko == null) {
+			this.priezvisko = "debil";
+		}else {
+			
+			this.priezvisko = priezvisko;
+		}
+	}
 	/**
 	 * Metoda vypise kompletne informacie o osobe na konzolu
 	 */
-	void vypisInfo() {
+	public void vypisInfo() {
 		System.out.println("Meno: " + meno);
 		System.out.println("Priezvisko: " + priezvisko);
 		System.out.println("Vek: " + vek);

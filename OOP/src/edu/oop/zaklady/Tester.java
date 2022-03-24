@@ -15,12 +15,12 @@ public class Tester {
 		Osoba ziak2 = new Osoba();
 		
 		ziak.meno = "Jan";
-		ziak.priezvisko = "Hrasko";
+		ziak.setPriezvisko("Hrasko");
 		ziak.vek = 24;
 		ziak.pohlavie = 'm';
 		
 		ziak2.meno = "Frantisek";
-		ziak2.priezvisko = "Mravec";
+		ziak2.setPriezvisko("Mravec");
 		ziak2.vek = 35;
 		ziak2.pohlavie = 'n';
 		
@@ -41,6 +41,8 @@ public class Tester {
 		ziak3.vypisInfo();
 		
 		Osoba ziak4 = new Osoba("Robert", "Kalinak", 75);
+		ziak4.vypisInfo();
+		ziak4.setPriezvisko(null);
 		ziak4.vypisInfo();
 		
 		
